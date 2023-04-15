@@ -1,0 +1,672 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.navs{
+    padding: 1rem 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navs .logo img{
+    width: 60px;
+}
+
+.navs ul{
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+    text-align: left;
+}
+
+.navs li{
+    margin-right: 10px;
+}
+
+.navs li h4{
+    color: #1c6988;
+}
+
+.navigation li{
+    margin-right: 40px;
+}
+
+.navigationIcn li{
+    margin-right: 40px;
+}
+
+.navs button{
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    background-color: #4ca93a;
+    color: #fff;
+}
+
+
+/* Hero Section */
+.heroBanner .card1, .heroBanner .card2, .heroBanner .card3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+}
+
+.heroBanner .card1{
+    background-image: url('../assets/hero1.png');
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heroBanner .card2{
+    background-image: url('../assets/hero2.png');
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heroBanner .card3{
+    background-image: url('../assets/hero3.png');
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heroBanner .teks{
+    z-index: 100;
+    color: #fff;
+}
+
+.heroBanner .teks h3{
+    font-size: 30px;
+}
+
+.heroBanner .teks h4{
+    font-size: 20px;
+    margin: 10px 0; 
+}
+
+.heroBanner button{
+    background-color: #4ca93a;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+
+/* About Us Section */
+.aboutUs{
+    padding-top: 80px;
+}
+
+.aboutUs .title, .serviceSection .title, .pillarSection .title, .gallerySection .title, .ourTeam .title, .prayers .title, .ourEvent .title, .ourCauses .title, .testimonial .title, .ourBlog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutUs .title h3, .serviceSection .title h3, .pillarSection .title h3, .gallerySection .title h3, .ourTeam .title h3,  .prayers .title h3,  .ourEvent .title h3, .ourCauses .title h3, .testimonial .title h3, .ourBlog h3{
+    position: relative;
+    display: block;
+    width: 200px;
+    font-size: 25px;
+}
+
+.aboutUs .title h3::before, .serviceSection .title h3::before, .pillarSection .title h3::before, .gallerySection .title h3:before, .ourTeam .title h3::before,  .prayers .title h3::before,  .ourEvent .title h3::before, .ourCauses .title h3::before, .testimonial .title h3::before,  .ourBlog h3::before{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #4ca93a;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    border-radius: 5px;
+}
+
+.aboutUs .aboutContent{
+    display: flex;
+    padding: 70px 4%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aboutContent .card1{
+    width:47%;
+}
+
+.aboutContent .card2{
+    width:47%;
+}
+
+
+.aboutContent .imgContainer{
+    display: flex;
+}
+
+.aboutContent .imgContainer .firstImg{
+    width: 400px;
+    margin-right: 20px;
+}
+
+.aboutContent .imgContainer .secondImg{
+    width: 400px;
+}
+
+.aboutContent img{
+    width: 100%;
+}
+
+.aboutContent .card2 .teks{
+    text-align: left;
+}
+
+.aboutContent .card2 .teks h1{
+    color: #1c6758;
+}
+
+.aboutContent .card2 .teks p{
+    margin: 20px 0;
+}
+
+.aboutContent button{
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #4ca93a;
+    border: none;
+    color: #fff;
+}
+
+.serviceSection{
+    padding-top: 50px;
+}
+
+.serviceContent{
+    display: flex;
+    padding: 3rem 4%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 40px;
+}
+
+.serviceContent .card{
+    width: 400px;
+    text-align: left;
+    box-shadow: 3px 4px 17px -1px rgba(0,0,0,0.75);
+    border-bottom: 7px solid #4ca93a;
+}
+
+.serviceContent .card .teks{
+    padding: 0 10px;
+    padding-bottom: 30px;
+}
+
+.serviceContent .card h3{
+    margin: 10px 0;
+}
+
+.serviceContent .card .images{
+    width: 100%;
+}
+
+.serviceContent .card .images img{
+    width: 100%;
+}
+
+/* Pilar of islam */
+.pillarSection{
+    padding-top: 30px;
+}
+
+.pillarContent{
+    background-image: url('../assets/pilar.png');
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 0 4%;
+    position: relative;
+    background-attachment: fixed;
+    margin-top: 35px;
+}
+
+.pillarContent .pillarContainer{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    z-index: 100;
+}
+
+.pillarContent .pillarContainer .pillarItem{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pillarContent .pillarContainer .pillarItem .pillarIcon{
+    background-color: #fff;
+    height:150px ;
+    width:150px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 4px solid #4ca93a;
+    position: relative;
+}
+
+.pillarContent .pillarContainer .pillarItem .pillarIcon::before{
+    content: '';
+    background-color: transparent;
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+
+.pillarContent .pillarContainer .pillarItem .pillarIcon svg{
+    font-size: 40px;
+    color: #4ca93a;
+}
+
+.pillarContent .pillarContainer .pillarItem .pillarteks{
+    padding-top: 20px;
+    color: #fff;
+}
+
+.pillarContent .pillarContainer .pillarItem .pillarteks p{
+    font-size: 15px;
+}
+
+
+/* Gallery */
+.gallerySection{
+    padding-top: 50px;
+}
+
+.gallerySection .categoryGallery{
+    margin-top: 30px;
+}
+
+.gallerySection .categoryGallery ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.gallerySection .categoryGallery ul li{
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.gallerySection .categoryGallery ul li:hover{
+    color: #4ca93a;
+}
+
+.galleryContent{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 2rem 4%;
+    row-gap: 30px;
+}
+
+.galleryContent .card{
+    width: 350px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.galleryContent .card:hover::before{
+    width: 80%;
+    height: 80%;
+    content: '';
+    background-color: rgba(28, 103, 88, .8);
+    position: absolute;
+
+}
+
+.galleryContent .card img{
+    width: 100%;
+}
+
+
+/* Team Content */
+.ourTeam{
+    margin-top: 40px;
+}
+
+.teamContent{
+    margin-top: 40px;
+    padding: 0 4%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.teamContent .card{
+    width: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.teamContent .card img{
+    width: 100%;
+}
+
+.teamContent .card .teks{
+    position: absolute;
+    bottom: 10px;
+    z-index: 10;
+    width: 80%;
+    background-color: #4ca93a;
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.teamContent .card .teks p{
+    position: relative;
+}
+
+.teamContent .card .teks p::before{
+    position: absolute;
+    width: 100%;
+    content: '';
+    height: 2px;
+    background-color: #fff;
+    left: 0;
+    bottom: -10px;
+}
+
+.teamContent .card .teks ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 15px;
+}
+
+.teamContent .card .teks li a{
+    color: #fff;
+}
+
+/* PrayerTime */
+.prayers{
+    margin-top: 80px;
+    padding-top: 3rem;
+    background-image: url('../assets/timing.png');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.prayers .title h3{
+    color: #fff;
+}
+
+.prayers .prayerContent{
+    display: flex;
+    padding: 1rem 4%;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.prayers .prayerContent .card{
+    background-color: rgba(255, 255, 255, .1);
+    width: 200px;
+    position: relative;
+}
+
+
+.prayers .prayerContent .card .cardTitle{
+    background-color: #4ca93a;
+    color: #fff;
+    padding: 25px;
+}
+
+.prayers .prayerContent .card .cardContent{
+    margin-top: 20px;
+}
+
+.prayers .prayerContent .card .cardContent h4{
+    color: #4ca93a;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.prayers .prayerContent .card .cardContent p{
+    color: #fff;
+}
+
+/* Event */
+.ourEvent{
+    margin-top: 100px;
+}
+
+.eventContent{
+    margin-top: 50px;
+    display: flex;
+    padding: 1rem 4%;
+    justify-content: space-around;
+}
+
+.eventContent .card{
+    text-align: left;
+    width: 400px;
+    box-shadow: 3px 4px 17px -1px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.eventContent .card .images{
+    width: 100%;
+}
+
+.eventContent .card img{
+    width: 100%;
+}
+
+.eventContent .card .cardTeks{
+    padding: 10px;
+}
+
+.eventContent .card ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.eventContent .card ul li{
+    color:gray
+}
+
+.eventContent .card p{
+    color: gray;
+}
+
+/* Causes */
+.ourCauses{
+    margin-top: 50px;
+}
+
+.causesContent{
+    margin-top: 50px;
+    display: flex;
+    padding: 0 4%;
+    justify-content: space-between;
+}
+
+.causesContent .card{
+    width: 400px;
+    text-align: left;
+    box-shadow: 3px 4px 17px -1px rgba(0,0,0,0.5);
+}
+
+.causesContent .card .images{
+    width: 100%;
+}
+
+.causesContent .card img{
+    width: 100%;
+}
+
+.causesContent .card .cardTeks{
+    padding: 10px;
+}
+
+.causesContent .card h3{
+    margin-bottom: 10px;
+}
+
+.causesContent .card p{
+    color: gray;
+    margin-top: 10px;
+}
+
+.causesContent .card ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.causesContent .card ul li{
+    color: #1c6758;
+    font-weight: bold;
+}
+
+/* Counter */
+.counter{
+    margin-top: 50px;
+    background-image: url('../assets/event.png');
+    height: 300px;
+    padding: 2rem 4%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    justify-content: space-around;
+}
+
+.counter .card .content{
+    z-index: 100;
+    position: relative;
+    color: #fff;
+}
+
+.counter .card .content svg{
+    color: #fff;
+    font-size: 65px;
+}
+
+.counter .card .content h3{
+    font-size: 40px;
+}
+
+.counter .card .content h4{
+    font-size: 30px;
+}
+
+/* Testimonials */
+.testimonial{
+    margin-top: 50px;
+}
+
+.testimonialContent{
+    margin-top: 60px;
+}
+
+.testimonialContent .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonialContent .doblequote{
+    color: #1c6758;
+}
+
+.testimonialContent .card .content{
+    width: 800px;
+    border: 2px solid #4ca93a;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    padding: 50px 20px;
+}
+
+.testimonialContent .card .content h3{
+    margin-top: 20px;
+    font-size: 25px;
+    color: #1c6758;
+}
+
+/* Footer */
+.footers{
+    display: flex;
+    padding: 2rem 4%;
+    background-image: url('../assets/footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    justify-content: space-between;
+    background-position: bottom;
+    margin-top: 50px;
+    
+}
+
+.footers ul{
+    list-style: none;
+}
+
+.footers a{
+    color: #fff;
+}
+
+.footers li{
+    margin-top:20px;
+}
+
+.footer-1{
+    width: 300px;
+    text-align: left;
+    position: relative;
+    color: #fff;
+}
